@@ -1,0 +1,134 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<div class="col-xs-12">
+    <div class="col-md-12">
+        <h3> Actions</h3>
+        <div id="field">
+            <div id="field0">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="action_id">Action Id</label>
+                    <div class="col-md-5">
+                        <input id="action_id" name="action_id" type="text" placeholder="" class="form-control input-md">
+
+                    </div>
+                </div>
+                <br><br>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="action_name">Action Name</label>
+                    <div class="col-md-5">
+                        <input id="action_name" name="action_name" type="text" placeholder=""
+                            class="form-control input-md">
+
+                    </div>
+                </div>
+                <br><br>
+                <!-- File Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="action_json">Action JSON File</label>
+                    <div class="col-md-4">
+                        <input type="file" id="action_json" name="action_json" class="input-file" accept=".txt,.json">
+                        <div id="action_jsondisplay"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="form-group">
+            <div class="col-md-4">
+                <button id="add-more" name="add-more" class="btn btn-primary">Add More</button>
+            </div>
+        </div>
+        <br><br>
+
+    </div>
+</div>
+</div>
+
+<div id="field' + next + '" name="field' + next + '">
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="action_id">Action Id</label>
+        <div class="col-md-5"> <input id="action_id" name="action_id" type="text" placeholder=""
+                class="form-control input-md">
+        </div>
+    </div><br><br> <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="action_name">Action Name</label>
+        <div class="col-md-5">
+            <input id="action_name" name="action_name" type="text" placeholder="" class="form-control input-md">
+        </div>
+    </div><br><br><!-- File Button -->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="action_json">Action JSON File</label>
+        <div class="col-md-4">
+            <input id="action_json" name="action_json" class="input-file" type="file">
+        </div>
+    </div>
+</div>';
+
+' <div id="field' + next + '" name="field' + next + '">
+    <!-- Text input-->
+    <div class="form-group"> <label class="col-md-4 control-label" for="action_id">Action Id</label>
+        <div class="col-md-5"> <input id="action_id" name="action_id" type="text" placeholder=""
+                class="form-control input-md"> </div>
+    </div><br><br> <!-- Text input-->
+    <div class="form-group"> <label class="col-md-4 control-label" for="action_name">Action Name</label>
+        <div class="col-md-5"> <input id="action_name" name="action_name" type="text" placeholder=""
+                class="form-control input-md"> </div>
+    </div><br><br><!-- File Button -->
+    <div class="form-group"> <label class="col-md-4 control-label" for="action_json">Action JSON File</label>
+        <div class="col-md-4"> <input id="action_json" name="action_json" class="input-file" type="file"> </div>
+    </div>
+</div>';
+' <div id="payment_methodCLone0' + next + '" name="payment_methodCLone0' + next + '">
+    <div class="row no-gutters">
+        <div class=" col-md-6">
+            <div class="form-group">
+                <label for="payments" class="col-form-label pb-2">Payment Method</label>
+                <select name="paytype" class="card_typesl postform resizeselect form-control  select2-hidden-accessible"
+                    onchange="showhidecard('payment_left', this)" tabindex="-1" aria-hidden="true"
+                    class="payment_method" id="payment_method">
+
+
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group" id="c_payment">
+                <label for="discount" class="col-form-label pb-2">Customer payment</label>
+
+                <input type="number" class="form-control" id="customer_payment" name="discount" placeholder="0"
+                    onkeyup="changeAmount(value)">
+
+            </div>
+        </div>
+
+    </div>
+    <div id="payment_left"></div>
+</div>';
+
+
+var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me">Remove</button></div>
+</div>
+<div id="field">';
+    var removeButton = $(removeBtn);
+
+
+    <div id="field' + next + '" name="field' + next + '">
+       
+        var cln = document.getElementsByClassName("row no-gutters")[0].cloneNode(true)
+        document.getElementById("field0").append(cln,this);
+        <!-- Text input-->
+        
+    </div>';
+
+
+    <div id="field' + next + '" name="field' + next + '"><div class="row no-gutters"><div class=" col-md-6"><div class="form-group"><label for="payments" class="col-form-label pb-2">Payment Method</label><select name="paytype"class="card_typesl postform resizeselect form-control  select2-hidden-accessible"onchange="showhidecard('payment_left', this)" tabindex="-1" aria-hidden="true"class="payment_method" id="payment_method"></select></div></div><div class="col-md-6"><div class="form-group" id="c_payment"><label for="discount" class="col-form-label pb-2">Customer payment</label> <input type="number" class="form-control" id="customer_payment" name="discount" placeholder="0"onkeyup="changeAmount(value)"></div></div></div></div>';
